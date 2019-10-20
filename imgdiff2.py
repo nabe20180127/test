@@ -20,6 +20,9 @@ delay = 33
 
 cap = cv2.VideoCapture(camid)
 
+#rfile = 'inputs.mp4'
+#cap = cv2.VideoCapture(rfile)
+
 if not cap.isOpened():
     sys.exit()
 
