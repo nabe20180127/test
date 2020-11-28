@@ -67,12 +67,12 @@ def makeGraph(color, x, idx):
   fig = plt.figure()
   # ヒストグラムの描画
   plt.hist(x[idx], bins=100, color=color)
-  plt.title("normal histogram blue") # グラフの指定
-  plt.xlabel("x")                    # x方向のラベル
-  plt.ylabel("y")                    # y方向のラベル
-  plt.xlim(  0, 100)                 # グラフの表示範囲(x方向)
-  plt.ylim(  0,  25)                 # グラフの表示範囲(y方向)
-  #plt.grid()                        # グリッドを表示する
+  plt.title("histogram "+color) # グラフタイトル
+  plt.xlabel("region")          # x方向のラベル
+  plt.ylabel("number")          # y方向のラベル
+  plt.xlim(  0, 100)            # グラフの表示範囲(x方向)
+  plt.ylim(  0,  25)            # グラフの表示範囲(y方向)
+  #plt.grid()                   # グリッド表示
 
   #グラフ画像のサイズ確認
   #グラフのサイズを画面に出力(デバッグ用)
