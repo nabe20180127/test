@@ -31,6 +31,7 @@ def main():
 
   #動画ファイルを準備して、各グラフを１秒間出力する
   out = openMP4()
+  out1sec( out, g[ 0]) # 1枚目の画像をあらかじめ追加しておく必要がありそう？
   for i in range(len(g)):
     out1sec(out, g[i])
   closeMP4(out)
